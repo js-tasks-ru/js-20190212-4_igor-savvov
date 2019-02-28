@@ -12,6 +12,9 @@ function print (text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid (name) {
+  const isShort = name.length < 4 ? true : false;
+  const isSpaces = ~name.indexOf(' ') ? true : false;
+  return !isShort && !isSpaces ? true : false;
 }
 
 function sayHello () {
