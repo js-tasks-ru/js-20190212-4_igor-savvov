@@ -54,7 +54,7 @@
 
         let top = spanCoords.bottom + this.indent;
         if (top + tooltipCoords.height > document.documentElement.clientHeight) {
-          top = spanCoords.top - elCoords.height - this.indent;
+          top = spanCoords.top - tooltipCoords.height - this.indent;
         }
         this.el.style.top = `${top}px`;
 
